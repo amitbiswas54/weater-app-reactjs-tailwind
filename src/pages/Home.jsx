@@ -5,7 +5,7 @@ import { weatherTimeFormat } from '../helper/Helper';
 
 function Home() {
 
-    let { bgImage, clear, humidity, wind, thunder, cloudy, rainy, smoke } = images;
+    let { bgImage, clear, humidity, wind, thunder, cloudy, rainy, smoke, notfound } = images;
 
 const weatherIcons = {
     Clear: clear,
@@ -15,7 +15,8 @@ const weatherIcons = {
     Drizzle: cloudy,
     Mist: cloudy,
     Haze: cloudy,
-    Smoke: cloudy
+    Smoke: cloudy,
+    NotFound: notfound
   };
 
     const [city, setCity] = useState("");
@@ -23,7 +24,7 @@ const weatherIcons = {
     const [temperature, setTemperature] = useState(0);
     const [windSpeed, setWindSpeed] = useState(0);
     const [humidityLevel, setHumidityLevel] = useState(0);
-    const [weatherIcon, setWeatherIcon] = useState(null);
+    const [weatherIcon, setWeatherIcon] = useState(NotFound);
     const [timeSet, setTimeSet] = useState({});
 
 

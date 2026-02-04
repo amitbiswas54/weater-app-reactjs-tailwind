@@ -6,6 +6,7 @@ import thunder from './thunder.png'
 import cloudy from './cloudy.png'
 import rainy from './rainy.png'
 import smoke from './cloudy.png'
+import notfound from './default_amit.png'
 
 
 export const images = {
@@ -16,5 +17,6 @@ export const images = {
   thunder,
   cloudy,
   rainy,
-  smoke
+  smoke,
+  notfound
 }
